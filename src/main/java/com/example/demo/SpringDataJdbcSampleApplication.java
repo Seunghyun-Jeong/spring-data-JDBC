@@ -1,4 +1,4 @@
-package com.example.SpringDataJDBCSample;
+package com.example.demo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -6,13 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.example.demo.entity.Member;
 import com.example.demo.repository.MemberCrudRepository;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.data.jdbc.repository.config.EnableJdbcRepositories;
 
 /**
  * 스프링 부트 기동 클래스
  */
-@ComponentScan({"com.example.SpringDataJDBCSample", "com.example.demo.repository"})
 @SpringBootApplication
 public class SpringDataJdbcSampleApplication {
 	public static void main(String[] args) {
